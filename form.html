@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир котиков</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="style.css">
+  <script src="js.js"></script>
+
+</head>
+
+<body>
+  <div class="sticky-top"> 
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand text-uppercase" href="index.html">Сайт о котиках</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Обратная связь</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <header class="m-0 p-1 bg-light ">
+    <div class="row m-0 justify-content-between align-items-center w-100">
+       <div class="col-7 fon m-0"></div>
+       <div class="col-5 p-0 m-0 text-dark">
+        <h2 class="shadow-d text-uppercase text-sm-center">Котики</h2>
+        <h5 class="text-lg-right text-sm-center text-uppercase">Это страница: Кузьменко Владиславы Вячеславовны</h5>
+      </div>
+    </div>
+ </header>
+
+<header> 
+ <div class="textform"> <h2> Вам пришелся по душе котик? Оставьте заявку и мы с вами свяжемся!</h2></div>
+</header>
+
+ <div class="clearfix">
+  <img src="https://koshka.top/uploads/posts/2021-12/1639866865_1-koshka-top-p-kotik-mashet-lapkoi-2.jpg" class="col-md-5 float-md-end mb-2 ms-md-2" alt="лапка">
+ <div class="content container pb-5">
+  <div class="row justify-content-md-center mt-5 pl-5">
+    <div class="col-8 mb-3">
+      <section> 
+      <form id="feedbackForm">
+          <div class="form"> <h2> Форма обратной связи</h2> </div>
+          
+          <label for="name">Ваше имя</label>
+          <input name="name" type="text" class="form-control" id="name"
+                placeholder="Владислава" required>
+    
+      
+          <label for="phone">Ваш номер телефона</label>
+          <input name="phone" type="text" class="form-control" id="phone"
+                 placeholder="+9 999 999999"  required>
+ 
+          <label for="email">Ваша электронная почта </label>
+          <input name="email" type="text" class="form-control" id="email"
+                 placeholder="kotik@gmail.com"  required>
+
+          <label for="comm">Описание котика, который вам понравился</label>
+          <textarea class="form-control" name="comm" id="comm" rows="3"></textarea>
+
+        <label for="captcha">Решите пример:
+          <span id="captchaExample">
+          </span></label>
+        <input type="text" id="captcha" name="captcha" required>
+<p> </p>
+        <button type="button" onclick="checkCaptcha()">Отправить</button>
+      </form>
+        <div id="result"> </div>
+    </section>
+    </div>
+  </div>
+</div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
